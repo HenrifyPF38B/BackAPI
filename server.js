@@ -1,7 +1,7 @@
 const app = require("./app");
 require("dotenv").config();
-const { PORT } = process.env;
+const port = process.env.PORT || 3001;
 
-app.listen(PORT, ()=>{
+app.listen(port, ()=>{
   console.log("Running in railway");
 })
